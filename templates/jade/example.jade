@@ -1,0 +1,13 @@
+extends jade/template
+
+block head
+	+title('test page')
+	+description('just a test page')
+
+block header
+	h1 Test page
+	p= config.siteDescription
+
+block main
+	section
+		p just some text

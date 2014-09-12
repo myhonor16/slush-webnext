@@ -1,0 +1,16 @@
+mixin title(title)
+	if title && config.siteTitle
+		title= title + " - " + config.siteTitle
+	else
+		if config.siteTitle
+			title= config.siteTitle
+		else
+			title WebNext: Jade Edition
+mixin description(description)
+	if description
+		meta(name='description', content=description)
+	else
+		if config.siteDescription
+			meta(name='description', content=config.siteDescription)
+		else
+			meta(name='description', content='A template for creating websites with Gulp, Jade & Sass (SCSS)')

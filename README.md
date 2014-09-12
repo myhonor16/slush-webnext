@@ -7,7 +7,7 @@ A Slush generator for the WebNext website templates (HTML Edition, Jade Edition,
 
 ### Setup
 
-run `npm install -g slush` and `npm install -g slush-webnext`
+run **`npm install -g slush`** and **`npm install -g slush-webnext`**
 
 ### Usage
 

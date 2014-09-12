@@ -1,69 +1,39 @@
-# test [![Build Status](https://secure.travis-ci.org/myhonor16/slush-test.png?branch=master)](https://travis-ci.org/myhonor16/slush-test) [![NPM version](https://badge-me.herokuapp.com/api/npm/slush-test.png)](http://badges.enytc.com/for/npm/slush-test)
+Slush-WebNext
+=============
 
-> 
+A Slush generator for the WebNext website templates (HTML Edition, Jade Edition, etc.)
 
+[![Version][version-img]][version-url] [![License][license-img]][license-url] [![Build Status][travis-img]][travis-url]
 
-## Getting Started
+### Setup
 
-Install `slush-test` globally:
-
-```bash
-$ npm install -g slush-test
-```
+run `npm install -g slush` and `npm install -g slush-webnext`
 
 ### Usage
 
-Create a new folder for your project:
+Move to the directory of your new project and run
 
-```bash
-$ mkdir my-slush-test
-```
+`slush webnext`
 
-Run the generator from within the new folder:
+You will then be prompted with whether you want to use webnext-html or webnext-jade, followed by a prompt for the name & description of your project.
 
-```bash
-$ cd my-slush-test && slush test
-```
+You can skip the first question/prompt by running 
 
-## Getting To Know Slush
+`slush webnext html` or `slush webnext jade`
+
+for documentation on WebNext itself, visit [`myhonor16/webnext-html`](https://github.com/myhonor16/webnext-html) or [`myhonor16/webnext-jade`](https://github.com/myhonor16/webnext-jade)
+
+### Getting To Know Slush
 
 Slush is a tool that uses Gulp for project scaffolding.
 
 Slush does not contain anything "out of the box", except the ability to locate installed slush generators and to run them with liftoff.
 
-To find out more about Slush, check out the [documentation](https://github.com/klei/slush).
+To find out more about Slush, check out the [documentation](https://github.com/slushjs/slush).
 
-## Contributing
-
-See the [CONTRIBUTING Guidelines](https://github.com/myhonor16/slush-test/blob/master/CONTRIBUTING.md)
-
-## Support
-If you have any problem or suggestion please open an issue [here](https://github.com/myhonor16/slush-test/issues).
-
-## License 
-
-The MIT License
-
-Copyright (c) 2014, Samuel
-
-Permission is hereby granted, free of charge, to any person
-obtaining a copy of this software and associated documentation
-files (the "Software"), to deal in the Software without
-restriction, including without limitation the rights to use,
-copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the
-Software is furnished to do so, subject to the following
-conditions:
-
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
-OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
-HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-OTHER DEALINGS IN THE SOFTWARE.
-
+[version-url]: https://github.com/myhonor16/slush-webnext/releases
+[version-img]: http://img.shields.io/badge/Version-0.1.0-yellow.svg
+[license-url]: https://github.com/myhonor16/slush-webnext/blob/master/LICENSE
+[license-img]: http://img.shields.io/badge/License-MIT-red.svg
+[travis-url]: https://travis-ci.org/myhonor16/slush-webnext
+[travis-img]: https://travis-ci.org/myhonor16/slush-webnext.svg?branch=master

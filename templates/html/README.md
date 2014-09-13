@@ -35,7 +35,7 @@ run `bower install` & `npm install` to install dependencies (listed below)
 * `gulp test` to run jshint
 
 [version-url]: https://github.com/myhonor16/webnext-html/releases
-[version-img]: http://img.shields.io/badge/Version-1.0.0-yellow.svg
+[version-img]: http://img.shields.io/badge/Version-1.1.0-yellow.svg
 [license-url]: https://github.com/myhonor16/webnext-html/blob/master/LICENSE
 [license-img]: http://img.shields.io/badge/License-MIT-red.svg
 [travis-url]: https://travis-ci.org/myhonor16/webnext-html

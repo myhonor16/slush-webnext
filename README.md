@@ -13,7 +13,7 @@ run `npm install -g slush`
 
 Then install slush-webnext globally: 
 
-`npm install -g slush-webnext` or clone the repo, move into it, and run `npm link .` 
+clone the repo, move into it, and run `npm link .` 
 
 ### Usage
 

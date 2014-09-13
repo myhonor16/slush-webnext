@@ -13,10 +13,10 @@ run `bower install` & `npm install` to install dependencies (listed below)
 
 * **-- bower --**
 * HTML5shiv ^3.7.2
-* Zepto (Default) ^1.1.4
-* jQuery (Optional) ^1.11.0
-* Bootstrap (Sass Version) ^3.2.0
-* Bootswatch-sass ^3.2.0
+* Zepto (Default) ^1.1.4 ([Documentation](http://zeptojs.com/))
+* jQuery (Optional) ^1.11.0 ([Documentation](https://api.jquery.com/))
+* Bootstrap (Sass Version) ^3.2.0 ([Documentation](http://getbootstrap.com/))
+* Bootswatch-sass ^3.2.0 ([Documentation](https://github.com/log0ymxm/bootswatch-scss))
 * **-- npm --**
 * gulp ^3.8.8
 * gulp-concat ^2.4.0

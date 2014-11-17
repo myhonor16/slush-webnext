@@ -1,7 +1,7 @@
 {
   "name": "slush-webnext",
-  "description": "",
-  "version": "3.0.0",
+  "description": "A Slush generator for the WebNext website templates (HTML Edition, Jade Edition, etc.)",
+  "version": "3.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/myhonor16/slush-webnext.git"

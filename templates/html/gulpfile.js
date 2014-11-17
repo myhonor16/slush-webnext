@@ -1,50 +1,93 @@
 var gulp = require('gulp'),
-	concat = require('gulp-concat'),
-	webserver = require('gulp-webserver'), /* Server */
-	jade = require('gulp-jade'), /* Jade */
-	sass = require('gulp-ruby-sass'), /* CSS */
-	minifyCSS = require('gulp-minify-css'),
-	minifyJS = require('gulp-minify'), /* JS */
-	jshint = require('gulp-jshint'),
-	jshintStylish = require('jshint-stylish');
+	plumber = require('gulp-plumber'),
+	livereload = require('gulp-livereload'),
+	notify = require('gulp-notify'),
+	concat = require('gulp-concat');
 
-// Server
-gulp.task('server', function() {
-	gulp.src('./')
-		.pipe(webserver({
-			port: 9000,
-			directoryListing: true
-		}));
-});
+var minifyHTML = require('gulp-minify-html');
+
+var stylus = require('gulp-stylus'),
+	autoprefixer = require('gulp-autoprefixer'),
+	minifyCSS = require('gulp-minify-css');
+
+var minifyJS = require('gulp-minify');
 
 // Build
-	gulp.task('build-css', function() {
-		gulp.src('./sass/export.scss')
-			.pipe(sass({
-				compass: true,
-				sourcemap: true
+	gulp.task('html', function() {
+		gulp.src(['./**/*.html'])
+			.pipe(plumber())
+			.pipe(minifyHTML())
+			.pipe(gulp.dest('./dist/'))
+			.pipe(livereload({
+				auto: false
 			}))
+			.pipe(notify('<%= file.relative %> - Successful'));
+	});
+
+	gulp.task('css', function() {
+		// Libraries
+		gulp.src(['./bower_components/normalize-css/normalize.css'])
+			.pipe(plumber())
+			.pipe(concat('lib.css'))
 			.pipe(minifyCSS())
-			.pipe(gulp.dest('./css/'));
+			.pipe(gulp.dest('./dist/css/'))
+			.pipe(livereload({
+				auto: false
+			}));
+
+		// Your CSS
+		gulp.src('./build/css/export.styl')
+			.pipe(plumber())
+			.pipe(stylus({
+				compress: false,
+				linenos: true
+			}))
+			.pipe(autoprefixer({
+				cascade: false
+			}))
+			.pipe(concat('main.css'))
+			.pipe(gulp.dest('./dist/css/'))
+			.pipe(livereload({
+				auto: false
+			}));
+			
+		gulp.src('')
+			.pipe(notify('CSS - Task Successful'));
 	});
-	gulp.task('build-js', function() {
-		gulp.src(['bower_components/zepto/zepto.min.js', 'js/main.js'])
-			.pipe(concat('export.js'))
+
+	gulp.task('js', function() {
+		// Libraries
+		gulp.src(['./bower_components/html5shiv/dist/html5shiv-printshiv.min.js'])
+			.pipe(plumber())
+			.pipe(gulp.dest('./dist/js/lib/'))
+			.pipe(livereload({
+				auto: false
+			}));
+
+		// Your JS
+		gulp.src(['./build/js/main.js'])
+			.pipe(plumber())
+			.pipe(concat('main.js'))
 			.pipe(minifyJS())
-			.pipe(gulp.dest('./js/'));
+			.pipe(gulp.dest('./dist/js/'))
+			.pipe(livereload({
+				auto: false
+			}));
+			
+		gulp.src('')
+			.pipe(notify('JS - Task Successful'));
 	});
-gulp.task('build', ['build-css', 'build-js'], function() {
-});
 
-// Test
-	gulp.task('test-js', function() {
-		gulp.src('./js/main.js')
-			.pipe(jshint())
-			.pipe(jshint.reporter(jshintStylish));
+// Watch
+	gulp.task('watch', function() {
+		livereload.listen();
+
+		gulp.watch('./build/**/*.html', ['html']);
+		gulp.watch('./build/css/**', ['css']);
+		gulp.watch('./build/js/**', ['js']);
 	});
-gulp.task('test', ['test-js'], function() {
-});
 
-//  Default
-gulp.task('default', ['build', 'test'], function() {
-});
+// Default
+	gulp.task('default', ['html', 'css', 'js'], function() {
+	});
+

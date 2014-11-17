@@ -1,7 +1,7 @@
 WebNext: HTML Edition
 =============
 
-A template for creating websites with Gulp & Sass (SCSS)
+A template for creating websites with Gulp & Stylus
 
 [![Version][version-img]][version-url] [![License][license-img]][license-url] [![Dependency Status][gemnasium-img]][gemnasium-url]
 
@@ -9,35 +9,38 @@ A template for creating websites with Gulp & Sass (SCSS)
 
 run `bower install` & `npm install` to install dependencies (listed below)
 
-**NEW:** you can now use the new [WebNext slush generator][slush-webnext]
+You can also use the [WebNext slush generator][slush-webnext] instead of cloning this repo
 
 * **-- bower --**
 * HTML5shiv ^3.7.2
-* Zepto (Default) ^1.1.4 ([Documentation](http://zeptojs.com/))
-* jQuery (Optional) ^1.11.0 ([Documentation](https://api.jquery.com/))
-* Bootstrap (Sass Version) ^3.2.0 ([Documentation](http://getbootstrap.com/))
-* Bootswatch-sass ^3.2.0 ([Documentation](https://github.com/log0ymxm/bootswatch-scss))
+* Normalize.css ^3.0.2
 * **-- npm --**
-* gulp ^3.8.8
+* gulp ^3.8.10
+* gulp-plumber ^0.6.6
+* gulp-livereload ^2.1.1
+* gulp-notify ^2.0.1
 * gulp-concat ^2.4.0
-* gulp-webserver ^0.8.0
-* gulp-jade ^0.8.0
-* gulp-ruby-sass ^0.7.1
-* gulp-minify-css ^0.3.8
+* gulp-stylus ^1.3.4
+* gulp-autoprefixer ^2.0.0
+* gulp-minify-css ^0.3.11
 * gulp-minify ^0.0.3
-* gulp-jshint ^1.8.4
-* jshint-stylish ^0.4.0
 
 ### Usage
 
-* `gulp server` or `npm start` (`npm install -g http-server`) to run a local server on port [:9000](http://127.0.0.1:9000)
-* `gulp build` to compile sass & js files
-* `gulp test` to run jshint
+* `npm start` (requires http-server to be installed globally. simply run `npm install -g http-server` to install) to run a local server on port [:9000](http://127.0.0.1:9000)
+  * works in the project base & the dist folder (copy package.json from dist to any other folder to make it work there too)
+* `gulp` to process html, stylus & js files
+  * `gulp html` to process just the html files
+  * `gulp css` to process just the stylus files
+  * `gulp js` to process just the js files
+* `gulp watch` to watch for file changes and run the appropriate tasks
+
+You must add your individual CSS & JS libraries to `gulpfile.js`. HTML files are detected automatically.
 
 [version-url]: https://github.com/myhonor16/webnext-html/releases
-[version-img]: http://img.shields.io/badge/Version-1.1.0-yellow.svg
+[version-img]: http://img.shields.io/badge/Version-3.0.0-brightgreen.svg
 [license-url]: https://github.com/myhonor16/webnext-html/blob/master/LICENSE
-[license-img]: http://img.shields.io/badge/License-MIT-red.svg
+[license-img]: http://img.shields.io/badge/License-MIT-blue.svg
 [travis-url]: https://travis-ci.org/myhonor16/webnext-html
 [travis-img]: https://travis-ci.org/myhonor16/webnext-html.svg?branch=master
 [gemnasium-url]: https://gemnasium.com/myhonor16/webnext-html

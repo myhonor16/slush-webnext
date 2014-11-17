@@ -21,7 +21,7 @@ Move to the directory of your new project and run
 
 `slush webnext`
 
-You will then be prompted with whether you want to use webnext-html or webnext-jade, followed by a prompt for the name & description of your project.
+You will then be prompted with whether you want to use webnext-html or webnext-jade.
 
 You can skip the first question/prompt by running 
 
@@ -38,11 +38,9 @@ Slush does not contain anything "out of the box", except the ability to locate i
 To find out more about Slush, check out the [documentation](https://github.com/slushjs/slush).
 
 [version-url]: https://github.com/myhonor16/slush-webnext/releases
-[version-img]: http://img.shields.io/badge/Version-1.0.0-yellow.svg
+[version-img]: http://img.shields.io/badge/Version-3.0.0-brightgreen.svg
 [license-url]: https://github.com/myhonor16/slush-webnext/blob/master/LICENSE
-[license-img]: http://img.shields.io/badge/License-MIT-red.svg
-[travis-url]: https://travis-ci.org/myhonor16/slush-webnext
-[travis-img]: https://travis-ci.org/myhonor16/slush-webnext.svg?branch=master
+[license-img]: http://img.shields.io/badge/License-MIT-blue.svg
 [gemnasium-url]: https://gemnasium.com/myhonor16/slush-webnext
 [gemnasium-img]: https://gemnasium.com/myhonor16/slush-webnext.svg
 

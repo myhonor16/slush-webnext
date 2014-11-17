@@ -1,6 +1,5 @@
 bower_components
 node_modules
-.sass-cache
 example.html
-export.css
-export.js
+dist/css
+dist/js

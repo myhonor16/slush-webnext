@@ -1,4 +1,7 @@
-extends jade/template
+extends templates/main
+
+block config
+	- page.baseurl = '/'
 
 block head
 	+title('test page')

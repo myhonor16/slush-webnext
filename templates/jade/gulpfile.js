@@ -10,7 +10,7 @@ var stylus = require('gulp-stylus'),
 	autoprefixer = require('gulp-autoprefixer'),
 	minifyCSS = require('gulp-minify-css');
 
-var minifyJS = require('gulp-minify');
+var uglify = require('gulp-uglify');
 
 // Build
 	gulp.task('jade', function() {
@@ -66,11 +66,25 @@ var minifyJS = require('gulp-minify');
 				auto: false
 			}));
 
+		/*gulp.src(['./bower_components/'])
+			.pipe(plumber())
+			.pipe(concat('main.js'))
+			.pipe(uglify({
+				mangle: false,
+				output: {
+					comments: true
+				}
+			}))
+			.pipe(gulp.dest('./dist/js/lib/'))
+			.pipe(livereload({
+				auto: false
+			}));*/
+
 		// Your JS
 		gulp.src(['./build/js/main.js'])
 			.pipe(plumber())
 			.pipe(concat('main.js'))
-			.pipe(minifyJS())
+			.pipe(uglify())
 			.pipe(gulp.dest('./dist/js/'))
 			.pipe(livereload({
 				auto: false

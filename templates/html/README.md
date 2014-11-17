@@ -38,7 +38,7 @@ You can also use the [WebNext slush generator][slush-webnext] instead of cloning
 You must add your individual CSS & JS libraries to `gulpfile.js`. HTML files are detected automatically.
 
 [version-url]: https://github.com/myhonor16/webnext-html/releases
-[version-img]: http://img.shields.io/badge/Version-3.0.2-brightgreen.svg
+[version-img]: http://img.shields.io/badge/Version-3.0.3-brightgreen.svg
 [license-url]: https://github.com/myhonor16/webnext-html/blob/master/LICENSE
 [license-img]: http://img.shields.io/badge/License-MIT-blue.svg
 [travis-url]: https://travis-ci.org/myhonor16/webnext-html

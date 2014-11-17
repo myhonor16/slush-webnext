@@ -10,18 +10,26 @@ var stylus = require('gulp-stylus'),
 	autoprefixer = require('gulp-autoprefixer'),
 	minifyCSS = require('gulp-minify-css');
 
-var minifyJS = require('gulp-minify');
+var uglify = require('gulp-uglify');
 
 // Build
 	gulp.task('html', function() {
 		gulp.src(['./build/**/*.html'])
 			.pipe(plumber())
-			.pipe(minifyHTML())
+			.pipe(minifyHTML({
+				empty: true,
+				cdata: true,
+				conditionals: true,
+				spare: true,
+				quotes: true
+			}))
 			.pipe(gulp.dest('./dist/'))
 			.pipe(livereload({
 				auto: false
-			}))
-			.pipe(notify('<%= file.relative %> - Successful'));
+			}));
+		
+		gulp.src('')
+			.pipe(notify('HTML - Task Completed'));
 	});
 
 	gulp.task('css', function() {
@@ -52,7 +60,7 @@ var minifyJS = require('gulp-minify');
 			}));
 			
 		gulp.src('')
-			.pipe(notify('CSS - Task Successful'));
+			.pipe(notify('CSS - Task Completed'));
 	});
 
 	gulp.task('js', function() {
@@ -64,18 +72,32 @@ var minifyJS = require('gulp-minify');
 				auto: false
 			}));
 
+		/*gulp.src(['./bower_components/'])
+			.pipe(plumber())
+			.pipe(concat('main.js'))
+			.pipe(uglify({
+				mangle: false,
+				output: {
+					comments: true
+				}
+			}))
+			.pipe(gulp.dest('./dist/js/lib/'))
+			.pipe(livereload({
+				auto: false
+			}));*/
+
 		// Your JS
 		gulp.src(['./build/js/main.js'])
 			.pipe(plumber())
 			.pipe(concat('main.js'))
-			.pipe(minifyJS())
+			.pipe(uglify())
 			.pipe(gulp.dest('./dist/js/'))
 			.pipe(livereload({
 				auto: false
 			}));
 			
 		gulp.src('')
-			.pipe(notify('JS - Task Successful'));
+			.pipe(notify('JS - Task Completed'));
 	});
 
 // Watch

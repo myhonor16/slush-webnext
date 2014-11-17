@@ -3,7 +3,7 @@ Slush-WebNext
 
 A Slush generator for the WebNext website templates (HTML Edition, Jade Edition, etc.)
 
-[![Version][version-img]][version-url] [![License][license-img]][license-url] [![Dependency Status][gemnasium-img]][gemnasium-url]
+[![Version][version-img]][version-url] [![License][license-img]][license-url] [![Dependency Status][gemnasium-img]][gemnasium-url] [![Open Issues][issues-img]][issues-url]
 
 ### Setup
 
@@ -38,11 +38,13 @@ Slush does not contain anything "out of the box", except the ability to locate i
 To find out more about Slush, check out the [documentation](https://github.com/slushjs/slush).
 
 [version-url]: https://github.com/myhonor16/slush-webnext/releases
-[version-img]: http://img.shields.io/badge/Version-3.0.3-brightgreen.svg
+[version-img]: http://img.shields.io/badge/Version-3.0.3-brightgreen.svg?style=flat
 [license-url]: https://github.com/myhonor16/slush-webnext/blob/master/LICENSE
-[license-img]: http://img.shields.io/badge/License-MIT-blue.svg
+[license-img]: http://img.shields.io/badge/License-MIT-blue.svg?style=flat
 [gemnasium-url]: https://gemnasium.com/myhonor16/slush-webnext
-[gemnasium-img]: https://gemnasium.com/myhonor16/slush-webnext.svg
+[gemnasium-img]: http://img.shields.io/gemnasium/myhonor16/slush-webnext.svg?style=flat
+[issues-url]: https://github.com/myhonor16/slushwebnext/issues
+[issues-img]: http://img.shields.io/github/issues/myhonor16/slush-webnext.svg?style=flat
 
 [webnext-html-repo]: https://github.com/myhonor16/webnext-html
 [webnext-jade-repo]: https://github.com/myhonor16/webnext-jade

@@ -3,7 +3,7 @@ WebNext: HTML Edition
 
 A template for creating websites with Gulp & Stylus
 
-[![Version][version-img]][version-url] [![License][license-img]][license-url] [![Dependency Status][gemnasium-img]][gemnasium-url]
+[![Version][version-img]][version-url] [![License][license-img]][license-url] [![Dependency Status][gemnasium-img]][gemnasium-url] [![Open Issues][issues-img]][issues-url]
 
 ### Setup
 
@@ -38,12 +38,12 @@ You can also use the [WebNext slush generator][slush-webnext] instead of cloning
 You must add your individual CSS & JS libraries to `gulpfile.js`. HTML files are detected automatically.
 
 [version-url]: https://github.com/myhonor16/webnext-html/releases
-[version-img]: http://img.shields.io/badge/Version-3.0.3-brightgreen.svg
+[version-img]: http://img.shields.io/badge/Version-3.0.3-brightgreen.svg?style=flat
 [license-url]: https://github.com/myhonor16/webnext-html/blob/master/LICENSE
-[license-img]: http://img.shields.io/badge/License-MIT-blue.svg
-[travis-url]: https://travis-ci.org/myhonor16/webnext-html
-[travis-img]: https://travis-ci.org/myhonor16/webnext-html.svg?branch=master
+[license-img]: http://img.shields.io/badge/License-MIT-blue.svg?style=flat
 [gemnasium-url]: https://gemnasium.com/myhonor16/webnext-html
-[gemnasium-img]: https://gemnasium.com/myhonor16/webnext-html.svg
+[gemnasium-img]: http://img.shields.io/gemnasium/myhonor16/webnext-html.svg?style=flat
+[issues-url]: https://github.com/myhonor16/webnext-html/issues
+[issues-img]: http://img.shields.io/github/issues/myhonor16/webnext-html.svg?style=flat
 
 [slush-webnext]: https://github.com/myhonor16/slush-webnext

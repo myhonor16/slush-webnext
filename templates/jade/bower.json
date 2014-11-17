@@ -1,6 +1,6 @@
 {
   "name": "WebNext-Jade",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "private": true,
   "dependencies": {
     "html5shiv": "^3.7.2",

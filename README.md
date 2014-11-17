@@ -38,7 +38,7 @@ Slush does not contain anything "out of the box", except the ability to locate i
 To find out more about Slush, check out the [documentation](https://github.com/slushjs/slush).
 
 [version-url]: https://github.com/myhonor16/slush-webnext/releases
-[version-img]: http://img.shields.io/badge/Version-3.0.1-brightgreen.svg
+[version-img]: http://img.shields.io/badge/Version-3.0.2-brightgreen.svg
 [license-url]: https://github.com/myhonor16/slush-webnext/blob/master/LICENSE
 [license-img]: http://img.shields.io/badge/License-MIT-blue.svg
 [gemnasium-url]: https://gemnasium.com/myhonor16/slush-webnext

@@ -39,7 +39,7 @@ You can also use the [WebNext slush generator][slush-webnext] instead of cloning
 You must add your individual CSS & JS libraries to `gulpfile.js`. Jade files are detected automatically.
 
 [version-url]: https://github.com/myhonor16/webnext-jade/releases
-[version-img]: http://img.shields.io/badge/Version-3.0.0-brightgreen.svg
+[version-img]: http://img.shields.io/badge/Version-3.0.1-brightgreen.svg
 [license-url]: https://github.com/myhonor16/webnext-jade/blob/master/LICENSE
 [license-img]: http://img.shields.io/badge/License-MIT-blue.svg
 [travis-url]: https://travis-ci.org/myhonor16/webnext-jade

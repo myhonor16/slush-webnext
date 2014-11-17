@@ -1,7 +1,7 @@
 {
   "name": "WebNext-Jade",
-  "description": "",
-  "version": "3.0.0",
+  "description": "A template for creating websites with Gulp, Jade & Stylus",
+  "version": "3.0.1",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

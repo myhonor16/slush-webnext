@@ -14,7 +14,7 @@ var minifyJS = require('gulp-minify');
 
 // Build
 	gulp.task('html', function() {
-		gulp.src(['./**/*.html'])
+		gulp.src(['./build/**/*.html'])
 			.pipe(plumber())
 			.pipe(minifyHTML())
 			.pipe(gulp.dest('./dist/'))
